@@ -1,0 +1,44 @@
+.menu{
+    width:100%;
+    height: 50px;
+    background-color:#AE2692;
+    text-align: center;
+    color: white;
+}
+.left-menu{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    /* float: left; */
+    margin-left: 1px;
+}
+.center-menu{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: auto;
+}
+.center-menu-a{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    float: right;
+}
+.right-menu{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: auto;
+}
+.left-menu-bottom{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    color: white;
+}

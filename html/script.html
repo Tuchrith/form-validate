@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="x">Hello World</h1>
+    <input type="button" value="ChangeText" onclick="changetext()">
+    <img src="../img/angkor.jpg" alt="" id="imgs">
+    <input type="button" value="Change Img!!" onclick="A()">
+    <script>
+        function changetext(){
+        var h = document.getElementById("x");
+        h.innerHTML='Hello JavaScript';
+        //change style  
+        h.style.color="red";
+        h.style.backgroundColor='blue';
+        }
+        function A(){
+            var i = document.getElementById("imgs").src='https://pbs.twimg.com/media/CBUF4xnUUAEuOp5.jpg:large';
+            // alert("hello");   
+        }
+    </script>
+
+</body>
+</html>

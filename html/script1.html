@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="testvaraible"></p>
+    <p id="testobject"></p>
+    <p id="testarr"></p>
+    
+    <button onclick="testVaraible()">UpdateVaraible</button>
+    <button onclick="testObject()">TestObject</button>
+    <button onclick="testArr()">TestArr</button>
+    
+    <script>
+        function testVaraible(){
+            var country="cambodia";
+            var country;
+            var p=document.getElementById("testvaraible").innerHTML="country";
+
+        }    
+        function testObject(){
+            var user = {
+                fname:"long",
+                lname:"chong"
+            }
+            var p=document.getElementById("testobject").innerHTML=user.fname;
+        }
+        function testArr(){
+            var arr = ["a", "b", "c"]
+            var p=document.getElementById("testarr").innerHTML = arr[1];
+        
+        }
+        
+            let num=5;
+            console.log(num);
+
+            var isBoolean = true;
+        
+    </script>
+</body>
+</html>

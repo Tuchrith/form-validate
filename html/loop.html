@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="xx"></h1>
+    <script>
+        // for loop
+        // for(i=1;i<5;i++){
+        //     console.log(`this is ${i}`);
+        // }
+        // while
+        // let a =1;
+        // while(a<=5){
+        //     console.log(`this is: ${a}`);
+        //     a++;
+        // }
+        // do while
+        // let t=1;
+        // do{
+        //     console.log(`values of t is: ${t}`);
+        //     t++;
+        // }while(t<0)
+        // interation (for in and for of) object n array
+        // let person = {
+        //     firstname: 'Sok',
+        //     lastname: 'San',
+        //     age:30,
+        //     bio: function(){
+        //         console.log(`his name is:${this.firstname}`);
+        //     }
+        // }
+        // person.bio();
+        // for(p in person){
+        //     console.log(person[p]);
+        // }
+
+        //  array with for of
+        // let name = ['bopha','tata','nora'];
+        // console.log(name[0]);
+
+        // for of
+        let acticle = [
+                {
+                    id:1,
+                    title:'CSS',
+                    description:'This is CSS book'
+                },
+                {
+                    id:2,
+                    title:'JavaScript',
+                    description:' This is JavaScript book'
+                },
+                {
+                    id:3,
+                    title:'HTML',
+                    description:' This is HTML book'
+                }
+            ]
+            for(a of acticle){
+            //    console.log(a.id,a.title,a.description);
+               var h1= document.getElementById("xx");
+            //    h1.innerHTML+= (a.id,a.title,a.description);
+                h1.innerHTML +=a.id +" "+ a.title +" "+a.description + " "+"<br>";
+               
+                                
+                
+            }
+    </script>
+</body>
+</html>

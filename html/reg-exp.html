@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="frm">
+        <label for="" id="usermsg"></label><br>
+        UserName:<input type="text"  id="usn"><br>
+        <label for="" id="schoolsmg"></label><br>
+        SchoolName:<input type="text" id="school"><br>
+        <input type="submit">
+    </form>
+    <script>
+        var form = document.getElementById('frm');
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            //username
+            let username = document.getElementById('usn').value;
+            let patt = /[^a-z]/gi;
+            let msgResult = document.getElementById('usermsg');
+            if(username  != null){
+                msgResult.innerHTML = "*user input number or character beside a-z";
+                msgResult.style.color = 'red';
+            }
+            if(username.match(patt) == null){
+                msgResult.innerHTML = "*correct username";
+                msgResult.style.color = 'green';
+            }
+            if(username == "" || username == null){
+                msgResult.innerHTML = "*cannot blank ";
+                msgResult.style.color = 'red';
+            }
+            //school
+            let schollname = document.getElementById('school').value;
+            let pattSchool = /[^a-z\s]/gi;
+            let msgResult1 = document.getElementById('schoolsmg');
+            if(schollname.match(pattSchool) != null){
+                msgResult1.innerHTML = "*incorrect school name";
+                msgResult1.style.color = 'red';
+            }
+            if(schollname.match(pattSchool) == null){
+                msgResult1.innerHTML = "*correct school name "
+                msgResult1.style.color = 'green';
+            }
+            if(schollname == "" || schollname == null){
+                msgResult1.innerHTML = "*cannot be blank";
+                msgResult1.style.color = 'red';
+            }
+            
+        })
+    </script>
+</body>
+</html>

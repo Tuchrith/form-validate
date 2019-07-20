@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="frm">
+        <label for="" id="user"></label>
+        Username:<input type="text" id="username" placeholder="username"><br>
+        <label for="" id="pwdpas"></label>
+        Password:<input type="password" id="pwd" placeholder="password"><br>
+        ConfrimPassword:<input type="password" id="cpwd" placeholder="confrim password"><br>
+        <input type="submit">
+    </form>
+    <script>
+        var f = document.getElementById("frm");
+        f.addEventListener('submit', function(e){
+            e.preventDefault();
+            var u = document.getElementById('username');
+            var msg = document.getElementById('user');
+            var pas = document.getElementById('pwd');
+            var msg1 = document.getElementById('pwdpas');
+            console.log(u.value)
+                try{
+                    if(u.value == ""){
+                        throw "* can't be blank";
+                    }else if(!isNaN(u.value)){
+                        throw "*accept only character";
+                    }
+                }catch(e){
+                    console.log(e)
+                    msg.innerHTML = e
+                    msg.style.color = 'red'
+                }
+            console.log(pas.value)
+                try{
+                    if(pas.value ==""){
+                        throw "hello";
+                    }
+                }catch(e){
+
+                }    
+            }
+           
+         
+
+        )
+        
+    </script>
+</body>
+</html>

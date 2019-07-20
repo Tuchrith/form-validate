@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Number1: <input type="text" id="txt_num1" value=""><br>
+    Number2: <input type="text" id="txt_num2" value=""><br>
+    <input type="button" value="+" onclick="sum()">
+    <input type="button" value="-" onclick="dok()">
+    <input type="button" value="*" onclick="kun()">
+    <input type="button" value="/" onclick="jek()"><br>
+
+    Result: <input type="text" id="txt_result" value="">
+    <script>
+        var num1=document.getElementById("txt_num1");
+        var num2=document.getElementById("txt_num2");
+        function sum(){
+             var total = parseFloat(num1.value) + parseFloat(num2.value);
+            document.getElementById("txt_result").value=total;
+        }
+        function dok(){
+            var total = parseFloat(num1.value) - parseFloat(num2.value);
+            document.getElementById("txt_result").value=total;
+        }
+        function kun(){
+            var total = parseFloat(num1.value) * parseFloat(num2.value);
+            document.getElementById("txt_result").value=total;
+        }
+        function jek(){
+            var total = parseFloat(num1.value) / parseFloat(num2.value);
+            document.getElementById("txt_result").value=total;
+        }
+
+    </script>
+</body>
+</html>
